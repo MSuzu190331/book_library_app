@@ -1,1 +1,18 @@
 <h1>おすすめの本を載せる</h1>
+<% form_for (@book), books_create_path do |f| %>
+  <div><%= f.label :title %></div>
+  <div><%= f.text_field :phrase %></div>
+  <div><%= f.text_field :review %></div>
+  <div><%= f.submit %></div>
+<% end %>
+
+<%# #下記動かせば正常に動く %>
+<%#= form_for @book, url: books_create_path do |f| %>
+<!-- <div class="field">
+  <%#= f.label :title %>
+  <%#= f.text_field :title %>
+</div>
+<div class="actions">
+  <%#= f.submit%>
+</div> -->
+<%# end %>

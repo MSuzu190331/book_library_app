@@ -1,3 +1,20 @@
 <h1>BOOKS INDEX</h1>
 <a href = "/">HOME INDEXへ</a>
 <a href = "/comics/index">COMICS INDEXへ</a>
+
+<table>
+  <thead>
+    <tr>
+      <th>本の名前</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
